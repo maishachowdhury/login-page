@@ -9,7 +9,7 @@ describe('POST /api/login', () => {
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200);
-    expect(response.body.message).toBe('Login successful');
+    expect(response.body.message).toBe('Success');
   });
 
   it('returns 401 Unauthorized if the username and password are incorrect', async () => {
