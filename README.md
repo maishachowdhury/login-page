@@ -2,6 +2,18 @@
 
 This is a simple login page built with Next.js and Bootstrap. It allows users to log in by entering a username and password, which are checked against the hardcoded values "username" and "password" in the backend API
 
+## MVP Backend 
+- [x] Created endpoint /login
+- [x] Endpoint accecpts POST request 
+- [x] Authenticates with hard coded values for username and password 
+
+## MVP Frontend 
+- [x] Consumes API 
+- [x] Created simple login form using CSS and bootstrap 
+
+## Additional 
+Added tests for API. But no time to investigate bug (cannot find module for the handler function, even though the path is correct)
+
 ## Installation
 
 To run this project locally, follow these steps:
@@ -51,8 +63,14 @@ npm run test
     3. Make sure you increment the version as well in case there are code changes.
 3. Your branch will be deleted automatically.
 
-# Publish a new version
+## Publish a new version
 1. Create a release branch from dev
 2. Raise a PR against main from release
 3. Merge your branch and that automatically publishes a new version.
 
+## Note
+Tailwind and PostCSS not used. Configured with NextJS intially as I thought I would use Tailwind componenets. However Bootstrap provided free and quicker implementation to build an MVP. No time to remove Tailwind coniguration and dependencies. 
+
+## Acknowledgements
+* https://www.makeareadme.com
+* https://nextjs.org
