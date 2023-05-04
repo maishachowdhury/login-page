@@ -1,38 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Login Page
 
-## Getting Started
+This is a simple login page built with Next.js and Bootstrap. It allows users to log in by entering a username and password, which are checked against the hardcoded values "username" and "password" in the backend API
 
-First, run the development server:
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository to your local machine:
 
 ```bash
+git clone https://github.com/your-username/login-page.git
+```
+2. Install the dependencies:
+
+```
+npm install
+
+```
+3. Run the development server:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open your browser and navigate to http://localhost:3000 to view the login page.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Usage
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To use the login page, enter "username" and "password" in the respective input fields and click the "Log in" button. If the credentials are correct, a success message will be displayed. If the credentials are incorrect, an error message will be displayed.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Testing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project includes tests for the backend API. To run the tests, use the following command
 
-## Learn More
+```
+npm run test
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
+* Next.js
+* Bootstrap
+* Jest
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please make sure to update tests as appropriate.
