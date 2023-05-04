@@ -1,5 +1,5 @@
 const request = require('supertest');
-const handler = require('../pages/api/login');
+const handler = require('../../pages/api/login');
 
 describe('POST /api/login', () => {
   it('returns 200 OK if the username and password are correct', async () => {
