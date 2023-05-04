@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
-import styles from '../styles/Login.module.css';
+import styles from '../styles/login.module.css';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -19,9 +19,9 @@ export default function Login() {
       body: JSON.stringify({ username, password }),
     });
 
-    // If the API call was successful, redirect to the home page
+    // If the API call was successful, redirect to the welcome page
     if (response.ok) {
-      window.location.href = '/';
+      window.location.href = '/welcome';
     } else {
       setError('Incorrect username or password');
     }
