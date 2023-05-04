@@ -44,7 +44,15 @@ npm run test
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+1. There are 2 main branches `main` & `dev`
+2. When working on a ticket branch off of `dev` and raise a PR.
+    1. If you are working on a Ticket make sure you include the number in your PR name.
+    2. You can merge your PR after at least one approval.
+    3. Make sure you increment the version as well in case there are code changes.
+3. Your branch will be deleted automatically.
 
-Please make sure to update tests as appropriate.
+# Publish a new version
+1. Create a release branch from dev
+2. Raise a PR against main from release
+3. Merge your branch and that automatically publishes a new version.
+
