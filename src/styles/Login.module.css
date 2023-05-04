@@ -1,0 +1,74 @@
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Input styles */
+  .form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form input[type='text'],
+  .form input[type='password'] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .form input[type='text']:focus,
+  .form input[type='password']:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+  }
+  
+  /* Button styles */
+  .form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #4a5568;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #2d3748;
+  }
+  
+  /* Error message styles */
+  .form p {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #f56565;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .title {
+    margin-top: 2rem; /* Add margin to the top of the h1 element */
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
