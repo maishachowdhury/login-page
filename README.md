@@ -3,13 +3,13 @@
 This is a simple login page built with Next.js and Bootstrap. It allows users to log in by entering a username and password, which are checked against the hardcoded values "username" and "password" in the backend API
 
 ## MVP Backend 
-( [x] ) Created endpoint /login
-( [x] ) Endpoint accecpts POST request 
-( [x] ) Authenticates with hard coded values for username and password 
+- [x] Created endpoint /login
+- [x] Endpoint accecpts POST request 
+- [x] Authenticates with hard coded values for username and password 
 
 ## MVP Frontend 
-( [x] ) Consumes API 
-( [x] ) Created simple login form using CSS and bootstrap 
+- [x] Consumes API 
+- [x] Created simple login form using CSS and bootstrap 
 
 ## Additional 
 Added tests for API. But no time to investigate bug (cannot find module for the handler function, even though the path is correct)
