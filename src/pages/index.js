@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import styles from '../styles/index.module.css';
 
 export default function Home() {
   return (
-    <h1> Successful Login! </h1>
-  )
+    <div className={styles.container}>
+      <h1 className={styles.title}>Welcome!</h1>
+    </div>
+  );
 }
