@@ -68,3 +68,5 @@ npm run test
 2. Raise a PR against main from release
 3. Merge your branch and that automatically publishes a new version.
 
+## Note
+Tailwind and PostCSS not used. Configured with NextJS intially as I thought I would use Tailwind componenets. However Bootstrap provided free and quicker implementation to build an MVP. No time to remove Tailwind coniguration and dependencies. 
