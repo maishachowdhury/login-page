@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Container, Form, Button } from 'react-bootstrap';
+import styles from '../styles/Login.module.css';
 
 export default function Login() {
   const [username, setUsername] = useState('');
@@ -26,32 +28,34 @@ export default function Login() {
   };
 
   return (
-    <section>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username</label>
-          <input
+    <Container>
+      <h1 className={`${styles.title} text-center mt-5 mb-3`}>Login</h1>
+      <Form className={styles.form} onSubmit={handleSubmit}>
+        <Form.Group className={styles.inputWrapper}>
+          <Form.Label className={styles.label}>Username</Form.Label>
+          <Form.Control
+            className={styles.input}
             type="text"
             placeholder="Enter your username"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
           />
-        </div>
-        <div>
-          <label>Password</label>
-          <input
+        </Form.Group>
+        <Form.Group className={styles.inputWrapper}>
+          <Form.Label className={styles.label}>Password</Form.Label>
+          <Form.Control
+            className={styles.input}
             type="password"
             placeholder="Enter your password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />
+        </Form.Group>
+        {error && <p className={styles.error}>{error}</p>}
+        <div className="text-center">
+          <Button className={styles.button} type="submit">Login</Button>
         </div>
-        {error && <p>{error}</p>}
-        <div>
-          <button>Login</button>
-        </div>
-      </form>
-    </section>
+      </Form>
+    </Container>
   );
 }
