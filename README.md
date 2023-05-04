@@ -12,7 +12,7 @@ This is a simple login page built with Next.js and Bootstrap. It allows users to
 - [x] Created simple login form using CSS and bootstrap 
 
 ## Additional 
-Added tests for API. But no time to investigate bug (cannot find module for the handler function, even though the path is correct)
+Added tests for API. But no time to investigate bug (TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.)
 
 ## Installation
 
